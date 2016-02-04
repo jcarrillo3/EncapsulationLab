@@ -20,7 +20,7 @@ public class Startup {
             not have to be a GUI class.
         */
         HiringManager hm = new HiringManager();
-        hm.hireEmployee();
+        hm.hireEmployee("Jake", "Barry", "000-00-0000");
         System.out.println("The employee's status is: " + hm.getEmpStatus());
     }
     

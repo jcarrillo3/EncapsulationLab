@@ -23,18 +23,15 @@ public class Employee {
     private String cubeId = "hello";
     private Date currentDate;
     
-    public void setEmpInfo(String fn, String ln, String ssn, String cubeId){
-        this.setFirstName(fn);
-        this.setLastName(ln);
-        this.setSsn(ssn);
-        this.setCubeId(cubeId);
+    public Employee(){
+        currentDate = new Date();
     }
     
     public String getFirstName() {
         return firstName;
     }
 
-    private void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -42,7 +39,7 @@ public class Employee {
         return lastName;
     }
 
-    private void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
@@ -50,7 +47,7 @@ public class Employee {
         return ssn;
     }
 
-    private void setSsn(String ssn) {
+    public void setSsn(String ssn) {
         this.ssn = ssn;
     }
 
@@ -58,7 +55,7 @@ public class Employee {
         return birthDate;
     }
 
-    private void setBirthDate(Date birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -66,11 +63,11 @@ public class Employee {
         return cubeId;
     }
 
-    private void setCubeId(String cubeId) {
+    public void setCubeId(String cubeId) {
         this.cubeId = cubeId;
     }
     
-    public void beginOrientation(){
+    public void beginOrientation(String cubeId){
         this.meetWithHrForBenefitAndSalryInfo();
         this.meetDepartmentStaff();
         this.reviewDeptPolicies();

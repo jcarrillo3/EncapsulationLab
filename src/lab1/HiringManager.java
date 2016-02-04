@@ -16,9 +16,13 @@ public class HiringManager {
     
     private Employee employee;
     
-    public void hireEmployee(){
-        employee.setEmpInfo("Tom", "Red", "000-00-0000", "A12");
-        employee.beginOrientation();
+    public void hireEmployee(String fn, String ln, String ssn){
+        Employee emp = new Employee();
+        emp.setFirstName(fn);
+        emp.setLastName(ln);
+        emp.setSsn(ssn);
+        emp.beginOrientation("B12");
+        employee = emp;
     }
 
     public Employee getEmployee() {
