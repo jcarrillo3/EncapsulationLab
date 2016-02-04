@@ -20,7 +20,7 @@ public class Employee {
     private boolean metDeptStaff;
     private boolean reviewedDeptPolicies;
     private boolean movedIn;
-    private String cubeId = "hello";
+    private String cubeId;
     private Date currentDate;
     
     public Employee(){
@@ -75,7 +75,7 @@ public class Employee {
     }
     
     // Assume this must be performed first
-    private void meetWithHrForBenefitAndSalryInfo() {
+    public void meetWithHrForBenefitAndSalryInfo() {
         SimpleDateFormat sdf = new SimpleDateFormat("M/d/yyyy");
         String fmtDate = sdf.format(currentDate);
         System.out.println("Met with Hr on " + fmtDate);
