@@ -19,7 +19,7 @@ public class Startup {
             may need to create a new class that talks to Employee. This does
             not have to be a GUI class.
         */
-        HiringManager hm = new HiringManager();
+        HrManager hm = new HrManager();
         hm.hireEmployee("Jake", "Barry", "000-00-0000");
         System.out.println("The employee's status is: " + hm.getEmpStatus());
     }

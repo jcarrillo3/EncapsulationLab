@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author Juan
  */
-public class HiringManager {
+public class HrManager {
     
     private Employee employee;
     
